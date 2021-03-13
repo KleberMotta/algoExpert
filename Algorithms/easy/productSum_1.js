@@ -4,12 +4,12 @@ function productSum(array, depth = 1) {
   let sum = 0;
   for (const element of array) {
     if (!Array.isArray(element)) {
-      sum += element * depth;
+      sum += element;
     } else {
-      sum += productSum(element, depth + 1) * depth;
+      sum += productSum(element, depth + 1);
     }
   }
-  return sum;
+  return sum * depth;
 }
 
 const result = productSum([5, 2, [7, -1], 3, [6, [-13, 8], 4]]);
