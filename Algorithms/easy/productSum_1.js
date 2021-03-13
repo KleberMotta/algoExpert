@@ -1,5 +1,6 @@
 
-// O(K) T | O(1) S - where K is the total of integers inside the "special" array
+// O(K) T | O(D) S - where K is the total of integers inside the "special" array
+// D is greatest depth of of "special" arrays in the array
 function productSum(array, depth = 1) {
   let sum = 0;
   for (const element of array) {
