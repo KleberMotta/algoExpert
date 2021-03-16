@@ -1,4 +1,4 @@
-// O(n) T | o(n) S - where n is the length of the input string
+// O(n) T | o(k) S - where k is resulting size of the return string
 function runLengthEncoding(string) {
   let encodedString = [];
   for (let idx = 0; idx < string.length; idx++) {
@@ -14,7 +14,7 @@ function runLengthEncoding(string) {
   return encodedString.join('');
 }
 
-const result = runLengthEncoding("aA");
+const result = runLengthEncoding("AAAAAAAAAA");
 console.log(result);
 
 // Do not edit the line below.
